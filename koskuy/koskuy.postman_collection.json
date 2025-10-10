@@ -1,0 +1,314 @@
+{
+	"info": {
+		"_postman_id": "366c82c6-f4b4-4bc1-977f-811368dda3d7",
+		"name": "koskuy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "48621815"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Julio Tanlain\",\r\n  \"email\": \"julio@example.com\",\r\n  \"password\": \"1234\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "$2a$10$e2p0yseZekuXRqnUuE5DH.j.GBhoyr2yf2Q/wBC.U5lmq3lHRvLSy",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"julio@example.com\",\r\n  \"password\": \"1234\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "users",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6Imp1bGlvQGV4YW1wbGUuY29tIiwiZXhwIjoxNzYwMTc3MDQ0fQ.J4GkU_ZEETU7kGfQIjtlxnq0QIyUo193nEPeEGsvNyU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6Imp1bGlvQGV4YW1wbGUuY29tIiwiZXhwIjoxNzYwMTcxMjcyfQ.9yHxmh7-2QyxwA2IVHue--oaQ5wcWF-ig5pNMM0CLio",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/users/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get kategori",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6Imp1bGlvQGV4YW1wbGUuY29tIiwiZXhwIjoxNzYwMTcxMjcyfQ.9yHxmh7-2QyxwA2IVHue--oaQ5wcWF-ig5pNMM0CLio",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/kategori",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"kategori"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "kategori post",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6Imp1bGlvQGV4YW1wbGUuY29tIiwiZXhwIjoxNzYwMTc3MDQ0fQ.J4GkU_ZEETU7kGfQIjtlxnq0QIyUo193nEPeEGsvNyU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nama\": \"Kos Putra\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/kategori",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"kategori"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get transaksi",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6Imp1bGlvQGV4YW1wbGUuY29tIiwiZXhwIjoxNzYwMTcxMjcyfQ.9yHxmh7-2QyxwA2IVHue--oaQ5wcWF-ig5pNMM0CLio",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/transaksi",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"transaksi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post transaksi",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6Imp1bGlvQGV4YW1wbGUuY29tIiwiZXhwIjoxNzYwMTcxMjcyfQ.9yHxmh7-2QyxwA2IVHue--oaQ5wcWF-ig5pNMM0CLio",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"kategori_id\": 2,\r\n  \"jumlah\": 250000,\r\n  \"keterangan\": \"Bayar kos Oktober\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/transaksi",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"transaksi"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "laporan",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6Imp1bGlvQGV4YW1wbGUuY29tIiwiZXhwIjoxNzYwMTcxMjcyfQ.9yHxmh7-2QyxwA2IVHue--oaQ5wcWF-ig5pNMM0CLio",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"kategori_id\": 2,\r\n  \"jumlah\": 250000,\r\n  \"keterangan\": \"Bayar kos Oktober\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:8080/laporan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"laporan"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6Imp1bGlvQGV4YW1wbGUuY29tIiwiZXhwIjoxNzYwMTc3MDQ0fQ.J4GkU_ZEETU7kGfQIjtlxnq0QIyUo193nEPeEGsvNyU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/users/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
