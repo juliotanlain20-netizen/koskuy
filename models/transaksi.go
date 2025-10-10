@@ -3,12 +3,14 @@ package models
 import "time"
 
 type Transaksi struct {
-	ID          uint      `gorm:"primaryKey" json:"id"`
-	UserID      uint      `json:"user_id"`
-	KategoriID  uint      `json:"kategori_id"`
-	Nominal     float64   `json:"nominal"`
-	Tanggal     time.Time `json:"tanggal"`
-	Keterangan  string    `json:"keterangan"`
-	CreatedAt   time.Time `json:"created_at"`
-	UpdatedAt   time.Time `json:"updated_at"`
+    ID         uint      `json:"id" gorm:"primaryKey"`
+    UserID     uint      `json:"user_id"`
+    KategoriID uint      `json:"kategori_id"`
+    Jumlah     float64   `json:"jumlah"`
+    Keterangan string    `json:"keterangan"`
+    Tanggal    time.Time `json:"tanggal"`
+
+    // Tambahkan relasi biar GORM tahu
+    User     User     `json:"user" gorm:"foreignKey:UserID"`
+    Kategori Kategori `json:"kategori" gorm:"foreignKey:KategoriID"`
 }
