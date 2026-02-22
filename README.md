@@ -1,4 +1,4 @@
-<img width="1949" height="1227" alt="image" src="https://github.com/user-attachments/assets/5f13839c-5d10-4959-a1e6-d1bc65ae70b1" />KosKuy – Personal Expense Management REST API
+KosKuy – Personal Expense Management REST API
 📌 Overview
 
 KosKuy is a RESTful API built using Go (Golang) and Gin Framework to help boarding house residents (students or remote workers) manage their personal living expenses digitally and in a structured way.
@@ -57,6 +57,12 @@ Retrieve category list
 Record expense transactions
 
 Retrieve transaction history
+
+PREVIEW
+<img width="1949" height="1227" alt="image" src="https://github.com/user-attachments/assets/7fdff5dd-0128-4fd2-b18f-56da1c6c045b" />
+<img width="1896" height="1234" alt="image" src="https://github.com/user-attachments/assets/c7849b74-d6d7-44ca-bc33-dcae23467735" />
+<img width="2000" height="1300" alt="image" src="https://github.com/user-attachments/assets/98f2d4d3-d016-4975-a7fa-06ab49b9a278" />
+
 
 📊 Financial Reporting
 
